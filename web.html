@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hostel Registration</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="photo">
+            <img src="C:\Users\sayya\OneDrive\Documents\Desktop\Extras\website\itm.jpg" alt="logo"class="img">
+            <h1>ITM(SLS) BARODA UNIVERSITY</h1>
+        </div>
+    <form action="submit.php" method="post" enctype="multipart/form-data" autocomplete="off">
+
+        <div class="head">
+            
+		    <h2>Hostel Admission Form</h2>
+		    <h2>(Session: 2023-2024)</h2>
+
+            <p>Important Instructions : <br>For applying to hostel accommodation, one should have admitted in ITM(SLS) BARODA UNIVERSITY.  <br> Identity Proof and all essential documents like driving License, Aadhar Card etc at the time of Admission <br>No column should be left blank.Write N.A. if not applicable <br> All the details should be filled in Capital Letters</p>
+        </div>
+
+        <div class="side">
+        <div class="name">
+            <label for="Name">Name:</label>
+            <div class="in">
+			<input type="text" id="Surname" name="Surname" required placeholder="Surname">
+			<input type="text" id="First Name" name="First Name" required placeholder="First Name">
+			<input type="text" id="Father's Name" name="Fathers Name" required placeholder="Father's Name">
+        </div>
+        </div>
+        <div class="photo-box">
+            <label for="photo">Photo:</label>
+            <input type="file" id="photo" name="photo" accept="image/jpeg" required>
+        </div>
+    </div>
+        <div class="address">
+            <label for="address">Residential Address:</label>
+			<textarea id="address" name="address" rows="4" cols="50" required></textarea>
+        </div>
+
+        <div class="main_address">
+            <label for="pin">Pin Code:</label>
+			<input type="text" id="pin" name="pin" required>
+
+			<label for="city">City:</label>
+			<input type="text" id="city" name="city" required>
+
+			<label for="state">State:</label>
+			<input type="text" id="state" name="state" required>
+        </div>
+
+        <div class="No_Email">
+            <label for="mobile">Mobile No.:</label>
+			<input type="tel" id="mobile" name="mobile" required>
+
+			<label for="home_tel">Home Tel.No.:</label>
+			<input type="tel" id="home_tel" name="home_tel">
+
+			<label for="email">Email Address:</label>
+			<input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="DoB">
+            <label for="dob">Date of Birth:</label>
+			<input type="date" id="dob" name="dob" required>
+
+			<label for="bloodgroup">Blood Group:</label>
+			<input type="text" id="bloodgroup" name="bloodgroup" required><br><br>
+
+			<label for="phone">Emergency Phone Number(Parent/Guardian/Local Guardian):</label>
+			<input type="tel" id="phone" name="phone" required>
+        </div>
+
+
+        <div class="college">
+            <label for="school">School at ITMBU:</label>
+			<select id="school" name="School">
+				<option value=""></option>
+				<option value="socset">SOCSET</option>
+			</select>
+
+			<label for="programme">Programme:</label>
+			<select id="programme" name="programme">
+				<option value=""></option>
+				<option value="btech">B.Tech</option>
+				<option value="mtech">Diploma</option>
+				<option value="msc">BCA</option>
+			</select>
+
+			<label for="branch">Branch:</label>
+			<select id="branch" name="branch">
+				<option value=""></option>
+				<option value="cse">CSE</option>
+				<option value="ai">AI</option>
+				<option value="csn">CSN</option>
+				<option value="it">IT</option>
+			</select>
+        </div>
+
+        <div class="sem">
+            <label for="semester">Current Semester:</label>
+			<select id="semester" name="semester">
+				<option value=""></option>
+				<option value="1">1st Sem</option>
+				<option value="2">2nd Sem</option>
+				<option value="3">3rd Sem</option>
+				<option value="4">4th Sem</option>
+				<option value="5">5th Sem</option>
+				<option value="6">6th Sem</option>
+				<option value="7">7th Sem</option>
+				<option value="8">8th Sem</option>
+			</select>
+
+			<label for="allergy">Allergy if any:</label>
+			<input type="text" id="allergy" name="allergy">
+        </div>
+
+
+        <div class="terms">
+            <p>I declare that the information given above is true to the best of my knowledge. I agree that if any 	information furnished above found incoorect my admission is liable to be cancelled. </p>
+
+            <label for="date">Date:</label>
+			<input type="text" id="date" name="date" required>
+
+        </div>
+
+        <div class="family">
+            <p><h3>FAMILY BACKGROUND:</h3></p>
+
+            <div class="family_info">
+                <label for="fullname">Full Name of the Parent/Guardian:</label>
+                <input type="text" id="fullname" name="fullname"><br><br>
+
+                <label for="relationship">Relationship:</label>
+                <input type="text" id="relationship" name="relationship">
+
+                <label for="occupation">Occupation &amp; Designation:</label>
+                <input type="text" id="occupation" name="occupation">
+            </div>
+
+            <div class="family_address">
+                <label for="address">Permanent Address:</label><br>
+			<textarea id="address" name="address" rows="4" cols="50"></textarea>
+            </div>
+
+            <div class="No_Email">
+                <label for="email">Email:</label>
+			<input type="email" id="email" name="email">
+
+			<label for="telno">Tel.no. (Mobile/Res):</label>
+			<input type="tel" id="telno" name="telno">
+            </div>
+        </div>
+
+        <div class="nearby">
+            <p><h3>LOCAL GUARDIAN (In case of emergency)</h3> </p>
+
+            <div class="name">
+                <label for="name">Name:</label>
+			    <input type="text" id="name" name="name">
+            </div>
+            <div class="address">
+			<label for="address">Permanent Address:</label><br>
+			<textarea id="address" name="address" rows="4" cols="50"></textarea>
+            </div>
+            <div class="no">
+			<label for="telno">Tel. no.(Mob/Res):</label>
+			<input type="tel" id="telno" name="telno">
+                <label for="date">Date:</label>
+			    <input type="text" id="date" name="date" required>
+            </div>
+
+
+        </div>
+
+        <input type="submit" value="Submit">
+
+
+    </form>
+</div>
+</body>
+</html>
